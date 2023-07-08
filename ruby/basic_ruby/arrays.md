@@ -101,7 +101,7 @@ a + b         #=> [1, 2, 3, 3, 4, 5]
 a.concat(b)   #=> [1, 2, 3, 3, 4, 5]
 ~~~
 
-To find the difference between two arrays, you can subtract them using `-`. This method returns a copy of the first array, removing any elements that appear in the second array.
+To find the difference between two arrays, you can subtract them using `-`. This method returns a copy of the first array, removing any elements that appear in the second array. 
 
 ~~~ruby
 [1, 1, 1, 2, 2, 3, 4] - [1, 4]  #=> [2, 2, 3]
@@ -128,6 +128,8 @@ Here is a brief look at some other common array methods you might run into:
 [1, 2, 3].length        #=> 3
 
 [1, 2, 3].reverse       #=> [3, 2, 1]
+
+[1, 2, 2, 3, 3].uniq     #=> "[1, 2, 3]"
 
 [1, 2, 3].include?(3)   #=> true
 [1, 2, 3].include?("3") #=> false
